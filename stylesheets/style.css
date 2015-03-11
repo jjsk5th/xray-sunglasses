@@ -1,4 +1,28 @@
-/* line 2, ../sass/style.scss */
-nav a {
+/* line 1, ../sass/style.scss */
+section.hero_image {
+  height: 40%;
+  background: #f2f2f2;
+}
+
+/* line 6, ../sass/style.scss */
+section.about {
+  width: 50%;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+}
+/* line 13, ../sass/style.scss */
+section.about nav a {
   display: inline-block;
+  padding-top: 87px;
+}
+/* line 19, ../sass/style.scss */
+section.about .profile_pic {
+  width: 234px;
+  height: 234px;
+  border-radius: 380px;
+  background: url(/images/bio_pic_20150224.png) 50% -2px;
+  position: absolute;
+  margin-left: -129px;
+  margin-top: -200px;
 }
