@@ -1,3 +1,14 @@
+@import 'modular-scale';
+@import "compass/utilities/general/clearfix";
+
+
+$ms-base: 1rem;
+$ms-ratio: $golden;
+
+html {
+	font-size:ms(0);
+}
+
 section.hero_image {
 	height:40%;
 	background:#f2f2f2;

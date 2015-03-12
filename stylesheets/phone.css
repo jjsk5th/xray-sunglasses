@@ -1,0 +1,7 @@
+@media all and (max-width: 480px) {
+  /* line 5, ../sass/phone.scss */
+  section.about .profile_pic {
+    width: 100px !important;
+    height: 100px;
+  }
+}
