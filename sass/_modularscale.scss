@@ -1,0 +1,39 @@
+@import 'modular-scale';
+@import "compass/utilities";
+
+
+$ms-base: 1rem 5px;
+$ms-ratio: $golden;
+
+//Widths
+$ms-10: 1.8034px;
+$ms-9: 1.90983px;
+$ms-8: 2.91796px;
+$ms-7: 3.09017px;
+$ms-6: 5.72136px;
+$ms-5: 7.63932px;
+$ms-4: 12.36068px;
+$ms-3: 13.09017px;
+$ms-2: 8.09017px;
+$ms-1: 5px;
+$ms0: 5px;
+$ms1: 8.09017px; 
+$ms2: 13.09017px; 
+$ms3: 20px;
+$ms4: 21.18034px;
+$ms5: 32.36068px;
+//$ms6: 34.27051px; 
+$ms7: 52.36068px; 
+$ms8: 55.45085px; 
+$ms9: 84.72136px; 
+$ms10: 89.72136px;
+$ms11: 137.08204px;
+$ms12: 145.17222px;
+$ms13: 221.80341px;
+$ms14: 234.89358px;
+$ms15: 358.88545px;
+$ms16: 380.0658px;
+$ms17: 580.68887px;
+$ms18: 614.95939px;
+$ms19: 939.57433px;
+$ms20: 995.0252px;

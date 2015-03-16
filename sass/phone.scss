@@ -1,16 +1,41 @@
+@import '_modularscale';
+
 @media all and (max-width: 480px) {
 
-
-	section.about {
-		.profile_pic {
-			width:100px !important;
-			height:100px;
-		}
-	}
-
-
-//closing bracket
+html {
+	font-size:ms(2);
 }
+
+h1 {
+	font-size:ms(7);
+}
+
+.container {
+	width:ms(15);
+}
+
+section.currently, section.previously, section.experience {
+	width:17%;
+
+	div {
+		width:ms(8);
+		height:ms(8);
+	}
+}
+
+.profile_pic {
+	width:ms(11);
+	height:ms(11);
+}
+
+section.content_block {
+	width:ms(7);
+}
+
+
+
+}
+//closing bracket
 
 
 

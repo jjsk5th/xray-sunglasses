@@ -1,33 +1,107 @@
-/* line 8, ../sass/style.scss */
-html {
-  font-size: 1rem;
+@media (min-width: 768px) and (max-width: desktop-width-1px) {
+  /* line 31, ../sass/style.scss */
+  html {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 37, ../sass/style.scss */
+  html {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 480px) {
+  /* line 43, ../sass/style.scss */
+  html {
+    font-size: 0.61803rem;
+  }
+}
+/* line 49, ../sass/style.scss */
+h1 {
+  font-size: 1.90983rem;
 }
 
-/* line 12, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 section.hero_image {
-  height: 40%;
+  height: 33%;
   background: #f2f2f2;
 }
 
-/* line 17, ../sass/style.scss */
-section.about {
-  width: 50%;
-  padding-left: 25%;
-  padding-right: 25%;
+/* line 59, ../sass/style.scss */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 3.09017rem;
+}
+
+/* line 66, ../sass/style.scss */
+section.content_block {
+  text-align: center;
+  display: block;
+  padding: 2%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* line 76, ../sass/style.scss */
+section.currently, section.previously, section.experience {
+  vertical-align: top;
+  width: 23%;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* line 82, ../sass/style.scss */
+section.currently div, section.previously div, section.experience div {
+  width: 2.61803rem;
+  height: 2.61803rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f2f2f2;
+  border-radius: 100px;
+}
+
+/* line 92, ../sass/style.scss */
+section.contact {
+  padding-top: 6.8541rem;
+  clear: both;
+  box-shadow: 0 6px 13px -7px rgba(125, 125, 125, 0.5);
+}
+/* line 98, ../sass/style.scss */
+section.contact div {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 17.94427rem;
+}
+/* line 104, ../sass/style.scss */
+section.contact div img {
+  width: 6.8541rem;
+  height: 6.8541rem;
+}
+/* line 109, ../sass/style.scss */
+section.contact div a {
+  display: block;
+}
+/* line 114, ../sass/style.scss */
+section.contact .site_h3 {
+  padding-bottom: 1rem;
+}
+
+/* line 126, ../sass/style.scss */
+.about h1 {
   text-align: center;
 }
-/* line 24, ../sass/style.scss */
-section.about nav a {
-  display: inline-block;
-  padding-top: 87px;
-}
-/* line 30, ../sass/style.scss */
-section.about .profile_pic {
-  width: 234px;
-  height: 234px;
+
+/* line 131, ../sass/style.scss */
+.profile_pic {
+  width: 4.23607rem;
+  height: 4.23607rem;
   border-radius: 380px;
   background: url(/images/bio_pic_20150224.png) 50% -2px;
-  position: absolute;
-  margin-left: -129px;
-  margin-top: -200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -7rem;
+  box-shadow: 0 3px 3px rgba(125, 125, 125, 0.5);
+  display: block;
 }
