@@ -1,0 +1,23 @@
+@media (max-width: 480px) {
+  /* line 12, ../sass/mobile.scss */
+  html {
+    font-size: 18px;
+  }
+
+  /* line 16, ../sass/mobile.scss */
+  h1 {
+    font-size: 2.61803rem;
+  }
+
+  /* line 20, ../sass/mobile.scss */
+  .profile_pic {
+    width: 8.09017rem;
+    height: 8.09017rem;
+  }
+
+  /* line 25, ../sass/mobile.scss */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

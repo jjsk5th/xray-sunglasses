@@ -1,0 +1,28 @@
+@media (max-width: 768px) and (min-width: 481px) {
+  /* line 11, ../sass/tablet.scss */
+  html {
+    font-size: 20px;
+  }
+
+  /* line 15, ../sass/tablet.scss */
+  h1 {
+    font-size: 3.09017rem;
+  }
+
+  /* line 19, ../sass/tablet.scss */
+  .container {
+    width: 66%;
+  }
+
+  /* line 23, ../sass/tablet.scss */
+  .profile_pic {
+    width: 8.09017rem;
+    height: 8.09017rem;
+  }
+
+  /* line 28, ../sass/tablet.scss */
+  section.currently div, section.previously div, section.experience div {
+    width: 5rem;
+    height: 5rem;
+  }
+}

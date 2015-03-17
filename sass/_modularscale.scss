@@ -5,6 +5,10 @@
 $ms-base: 1rem 5px;
 $ms-ratio: $golden;
 
+//@debug ms-list(-7, 10, 20px, $ms-ratio);
+//@debug ms-list(-7, 10, 5px, $ms-ratio);
+
+
 //Widths
 $ms-10: 1.8034px;
 $ms-9: 1.90983px;
@@ -22,7 +26,7 @@ $ms2: 13.09017px;
 $ms3: 20px;
 $ms4: 21.18034px;
 $ms5: 32.36068px;
-//$ms6: 34.27051px; 
+$ms6: 34.27051px; 
 $ms7: 52.36068px; 
 $ms8: 55.45085px; 
 $ms9: 84.72136px; 

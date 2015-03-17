@@ -1,102 +1,114 @@
-@media (min-width: 768px) and (max-width: desktop-width-1px) {
-  /* line 31, ../sass/style.scss */
+@media (min-width: 768px) {
+  /* line 14, ../sass/style.scss */
   html {
-    font-size: 20px;
+    font-size: 22px;
   }
-}
-@media (min-width: 1024px) {
-  /* line 37, ../sass/style.scss */
-  html {
-    font-size: 24px;
-  }
-}
-@media all and (max-width: 480px) {
-  /* line 43, ../sass/style.scss */
-  html {
-    font-size: 0.61803rem;
-  }
-}
-/* line 49, ../sass/style.scss */
-h1 {
-  font-size: 1.90983rem;
-}
 
-/* line 53, ../sass/style.scss */
+  /* line 18, ../sass/style.scss */
+  .container {
+    width: 50%;
+    max-width: 75rem;
+  }
+
+  /* line 24, ../sass/style.scss */
+  h1 {
+    font-size: 3.09017rem;
+  }
+}
+/* line 32, ../sass/style.scss */
 section.hero_image {
   height: 33%;
   background: #f2f2f2;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .container {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  padding-bottom: 3.09017rem;
+  padding-bottom: 5rem;
 }
 
-/* line 66, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
+p.description {
+  text-align: center;
+}
+
+/* line 48, ../sass/style.scss */
 section.content_block {
   text-align: center;
   display: block;
-  padding: 2%;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
-/* line 76, ../sass/style.scss */
-section.currently, section.previously, section.experience {
-  vertical-align: top;
-  width: 23%;
-  float: left;
-  background-color: rgba(255, 255, 255, 0.8);
+/* line 54, ../sass/style.scss */
+h3 {
+  text-align: center;
+  padding-top: 1rem;
 }
-/* line 82, ../sass/style.scss */
-section.currently div, section.previously div, section.experience div {
-  width: 2.61803rem;
-  height: 2.61803rem;
+
+/* line 59, ../sass/style.scss */
+section.experience {
+  vertical-align: top;
+  width: 66%;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4.23607rem;
+  box-shadow: 0 6px 13px -7px rgba(125, 125, 125, 0.5);
+}
+/* line 69, ../sass/style.scss */
+section.experience a {
+  width: 5rem;
+  height: 5rem;
   margin-left: auto;
   margin-right: auto;
   background: #f2f2f2;
   border-radius: 100px;
-}
-
-/* line 92, ../sass/style.scss */
-section.contact {
-  padding-top: 6.8541rem;
-  clear: both;
-  box-shadow: 0 6px 13px -7px rgba(125, 125, 125, 0.5);
-}
-/* line 98, ../sass/style.scss */
-section.contact div {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 17.94427rem;
-}
-/* line 104, ../sass/style.scss */
-section.contact div img {
-  width: 6.8541rem;
-  height: 6.8541rem;
-}
-/* line 109, ../sass/style.scss */
-section.contact div a {
+  margin-top: 2rem;
   display: block;
 }
-/* line 114, ../sass/style.scss */
-section.contact .site_h3 {
-  padding-bottom: 1rem;
+/* line 79, ../sass/style.scss */
+section.experience a:hover {
+  background: #ababab;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
+section.contact {
+  padding-top: 1.61803rem;
+  padding-bottom: 1.61803rem;
+  clear: both;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 93, ../sass/style.scss */
+section.contact a {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 2.61803rem;
+  height: 2.61803rem;
+  background: #f2f2f2;
+  border-radius: 100px;
+}
+/* line 104, ../sass/style.scss */
+section.contact a:hover {
+  background: #ababab;
+}
+/* line 114, ../sass/style.scss */
+section.contact {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 124, ../sass/style.scss */
 .about h1 {
   text-align: center;
 }
 
-/* line 131, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .profile_pic {
-  width: 4.23607rem;
-  height: 4.23607rem;
+  width: 8.09017rem;
+  height: 8.09017rem;
   border-radius: 380px;
   background: url(/images/bio_pic_20150224.png) 50% -2px;
   margin-left: auto;
