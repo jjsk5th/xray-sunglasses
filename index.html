@@ -1,6 +1,10 @@
 <html>
 	<head>
-		
+	
+
+
+
+		<!-- Stylesheets -->
 		<link href="./stylesheets/html5reset-1.6.1.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		<link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	  	<link href="./stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -16,9 +20,18 @@
 	  	<script src="//use.typekit.net/emp1tzh.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script src="./scripts/propellerjs.js"></script>
 	</head>
-	<body>
+	<body data-role="page">
+		<div data-role="panel" id="mypanel" data-position="left" data-display="overlay">
+		Here is some content
+		<a data-rel="close">close</a>
+		</div>
+		<header>
+			<a href="#mypanel">Open panel</a>
+		</header>
 		<section class="hero_image">
 		</section>
 		<div class="container">
@@ -28,6 +41,7 @@
 					Jack Kent 
 				</h1>
 			</section>
+
 			<p class="description">
 				Jack was the 2nd hire at <a href="http://www.grubhub.com">GrubHub</a>. After le*ading design there for nine ye*ars he's now doing design at <a href="">Propeller</a>.
 
@@ -39,18 +53,12 @@
 				<a class="email"></a>
 			</section>
 			<h3>		
-				Web & App UX design. Design strategy. Product Optimization.
+				Web & App UX design. Optimization. Design strategy.
 			</h3>
 
 			<section class="content_block experience">
 				<a href="http://www.propellerdesigns.com/#experience">Resume</a>
 			</section>
-
-
-
-<!-- 			<section class="content_block blog">
-					<a href="http://www.propellerdesigns.com/workshop">Workshop</a>
-			</section> -->
 		</div>
 	</body>
 </html>
