@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
   /* line 14, ../sass/style.scss */
   html {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   /* line 18, ../sass/style.scss */
@@ -15,13 +15,18 @@
     font-size: 3.09017rem;
   }
 }
-/* line 33, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
+header {
+  position: absolute;
+}
+
+/* line 37, ../sass/style.scss */
 section.hero_image {
   height: 33%;
   background: #f2f2f2;
 }
 
-/* line 38, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -29,24 +34,25 @@ section.hero_image {
   padding-bottom: 5rem;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 p.description {
   text-align: center;
+  max-width: 45rem;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 section.content_block {
   text-align: center;
   display: block;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 h3 {
   text-align: center;
   padding-top: 1rem;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 section.experience {
   vertical-align: top;
   width: 66%;
@@ -56,7 +62,7 @@ section.experience {
   padding-bottom: 4.23607rem;
   box-shadow: 0 6px 13px -7px rgba(125, 125, 125, 0.5);
 }
-/* line 70, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 section.experience a {
   width: 5rem;
   height: 5rem;
@@ -67,12 +73,12 @@ section.experience a {
   margin-top: 2rem;
   display: block;
 }
-/* line 80, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 section.experience a:hover {
   background: #ababab;
 }
 
-/* line 86, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 section.contact {
   padding-top: 1.61803rem;
   padding-bottom: 1.61803rem;
@@ -80,7 +86,7 @@ section.contact {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 94, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 section.contact a {
   display: inline-block;
   margin-left: 1rem;
@@ -90,22 +96,22 @@ section.contact a {
   background: #f2f2f2;
   border-radius: 100px;
 }
-/* line 105, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 section.contact a:hover {
   background: #ababab;
 }
-/* line 115, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 section.contact {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 125, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .about h1 {
   text-align: center;
 }
 
-/* line 130, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .profile_pic {
   width: 8.09017rem;
   height: 8.09017rem;
