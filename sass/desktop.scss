@@ -3,6 +3,7 @@
 @import '_base';
 //@import "compass/utilities/general/clearfix";
 
+
 @mixin desktop {
   @media (min-width: #{$tablet-width}) {
     @content;
@@ -12,9 +13,7 @@
 
 @include desktop {
 	html {
-		color: blue;
 		font-size: 17px;
 	}
 }
 //closing bracket for desktop
-
