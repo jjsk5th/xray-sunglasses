@@ -11,8 +11,13 @@ nav
 	color: white
 	z-index: 2
 
-	&.fixed
-		background-color: rgba(255,255,255,0.75) 
+	&.fixed-header
+		background-color: rgba(255,255,255,0.95) 
+		position: fixed
+		box-shadow: 0 2px 3px rgba(0,0,0,.1)
+		color: $black
+		border-bottom: 3.75px solid $black
+		width: 100%
 
 	.nav-menu
 		display: inline-block
@@ -30,6 +35,14 @@ nav
 			&:hover
 				padding-bottom: #{ms(0)}
 				border-bottom: 3.75px solid $yellow
+
+		.home
+			width: ms(12)
+			height: ms(12)
+			border-radius: ms(10)
+			border: 1px solid $black
+			position: absolute
+
 
 	.contact-links
 		padding: 1rem ms(19) 1rem 1rem
@@ -62,11 +75,12 @@ nav
 
 header
 	background-color: $black
-	height: 95vh
+	height: 96vh
 	width: 100%
 	color: $yellow
 	padding-top: ms(5)
 	position: relative
+	margin-bottom: 1rem
 
 	.profile-pic
 		width: ms(20)
@@ -74,7 +88,7 @@ header
 		background: url('/images/profile-pic.png') no-repeat center 
 		background-size: 100%
 		border-radius: ms(18)
-		border: ms(2) solid $blue
+		border: ms(2) solid rgba(112,183,186,.5)
 		margin: auto
 		margin-bottom: 1rem
 		margin-top: #{ms(20) - ms(2) - ms(2)}
@@ -99,6 +113,7 @@ header
 		width: 30rem
 		text-align: center
 		color: $yellow
+		font-weight: 500
 
 	.large-initials
 		font-size: ms(20)
@@ -126,8 +141,11 @@ header
 .section-header
 	padding-top: 1rem
 	margin-top: .5rem 
-	width: 20rem
 	padding-left: ms(15)
+	font-size: ms(16)
+	font-weight: 200
+	color: #ddd
+	letter-spacing: -2.25pt
 
 .posts
 	padding-left: ms(15)
@@ -135,32 +153,82 @@ header
 	display: flex
 	flex-flow: row wrap
 
-	.post-preview-container
-		padding-right: ms(14)
-		width: ms(22)
-		display: inline-block
+.see-all-posts
+	margin-left: 50%
+	display: inline-block
+	padding: 1rem
+	margin-top: 2rem
+	font-style: italic
+	background-color: $blue
+	color: white
 
-		&::last-child
-			padding-right: 0
+.post-preview-container
+	padding-right: ms(14)
+	width: 28%
+	display: inline-block
 
-		p.post-preview
-			padding-top: ms(9)
+	&:last-child
+		padding-right: 0
 
+	.site_h3
+		color: $gray
+
+	p.post-preview
+		padding-top: ms(9)
+
+	.link
+		margin-top: 1rem
+		display: block
+		margin-left: 50%
 
 	.see-all-posts
 		display: block
 		float: none
 
+.work-history
+	padding-left: ms(15)
+	padding-right: ms(14)
+	display: flex
+	align-items: stretch
+
+	.date
+		width: ms(19)
+		color: #ccc
+
+		p
+			color: #ccc
+
+	.job
+		width: 100%
+
+.employment-description
+	width: 66%
+	font-weight: 200
+	margin-bottom: 4rem
+	line-height: 1.33em
+	font-size: ms(8)
+	color: $gray
+
 .title-container
+	margin-bottom: 3rem
+
 	li
 		width: 32%
 		display: inline-block
 
+		.divider
+			width: ms(13)
+			height: 2.8px
+			background-color: $blue
+			display: block
+			margin-bottom: .5rem
+
+.accomplishments
+	width: 66%
+	padding-bottom: .5rem
+
 .design-skills
 	width: 90rem
-
-	h1
-		border-top: solid $black ms(1)
 
 	.skill
 		width: 32%
