@@ -2,14 +2,10 @@
 @import "compass/utilities"
 @import '_base'
 
-html
-	font-family: 'Brandon Grotesque', sans-serif
+html, p
+	font-family: $serif
 	font-weight: 200
 	line-height: 1.618em
-
-p
-	line-height: 1.618
-	font-family: 'abril-text', serif
 	color: $gray
 
 	&::selection
@@ -18,7 +14,7 @@ p
 
 h1, .site_h1
 	font-size: ms(12)
-	font-family: 'abril-text', serif
+	font-family: $serif
 	font-weight: 700
 	font-style: italic
 	line-height: 1.618
@@ -30,14 +26,29 @@ h2, .site_h2
 	font-weight: 700
 	font-style: italic
 	line-height: 1.618
-	font-family: 'Brandon Grotesque', sans-serif
+	font-family: $sans-serif
 	color: $black
+	letter-spacing: -.25pt
 
 h3, .site_h3
 	font-style: italic
 	font-weight: 500
 	font-size: ms(4)
 	text-transform: uppercase
-	letter-spacing: .5pt
-	font-family: 'Brandon Grotesque', sans-serif
+	font-family: $sans-serif
+	line-height: 1em
 
+.subhead
+	font-size: ms(9)
+	font-weight: 200
+	font-style: italic
+	line-height: 1.618
+	font-family: $sans-serif
+	color: $blue
+	letter-spacing: -.25pt
+	display: inline-block
+
+.link
+	font-style: italic
+	font-weight: 200
+	color: $blue

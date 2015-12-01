@@ -1,23 +1,17 @@
 /* line 5, ../sass/typography.sass */
-html {
-  font-family: "Brandon Grotesque", sans-serif;
+html, p {
+  font-family: "abril-text", serif;
   font-weight: 200;
   line-height: 1.618em;
-}
-
-/* line 10, ../sass/typography.sass */
-p {
-  line-height: 1.618;
-  font-family: "abril-text", serif;
   color: #808080;
 }
-/* line 15, ../sass/typography.sass */
-p::selection {
+/* line 11, ../sass/typography.sass */
+html::selection, p::selection {
   color: #fffa4d;
   background-color: #f1433f;
 }
 
-/* line 19, ../sass/typography.sass */
+/* line 15, ../sass/typography.sass */
 h1, .site_h1 {
   font-size: 321.99692em;
   font-family: "abril-text", serif;
@@ -28,7 +22,7 @@ h1, .site_h1 {
   color: #342f38;
 }
 
-/* line 28, ../sass/typography.sass */
+/* line 24, ../sass/typography.sass */
 h2, .site_h2 {
   font-size: 76.01316em;
   font-weight: 700;
@@ -36,14 +30,34 @@ h2, .site_h2 {
   line-height: 1.618;
   font-family: "Brandon Grotesque", sans-serif;
   color: #342f38;
+  letter-spacing: -0.25pt;
 }
 
-/* line 36, ../sass/typography.sass */
+/* line 33, ../sass/typography.sass */
 h3, .site_h3 {
   font-style: italic;
   font-weight: 500;
   font-size: 6.8541em;
   text-transform: uppercase;
-  letter-spacing: 0.5pt;
   font-family: "Brandon Grotesque", sans-serif;
+  line-height: 1em;
+}
+
+/* line 41, ../sass/typography.sass */
+.subhead {
+  font-size: 76.01316em;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 1.618;
+  font-family: "Brandon Grotesque", sans-serif;
+  color: #70b7ba;
+  letter-spacing: -0.25pt;
+  display: inline-block;
+}
+
+/* line 51, ../sass/typography.sass */
+.link {
+  font-style: italic;
+  font-weight: 200;
+  color: #70b7ba;
 }
