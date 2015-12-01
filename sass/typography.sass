@@ -1,10 +1,43 @@
 @import 'modular-scale'
 @import "compass/utilities"
+@import '_base'
 
 html
 	font-family: 'Brandon Grotesque', sans-serif
 	font-weight: 200
+	line-height: 1.618em
 
-h1
-	font-size: ms(3)
+p
+	line-height: 1.618
+	font-family: 'abril-text', serif
+	color: $gray
+
+	&::selection
+		color: $yellow
+		background-color: $red
+
+h1, .site_h1
+	font-size: ms(12)
+	font-family: 'abril-text', serif
+	font-weight: 700
+	font-style: italic
+	line-height: 1.618
+	letter-spacing: -.5pt
+	color: $black
+
+h2, .site_h2
+	font-size: ms(9)
+	font-weight: 700
+	font-style: italic
+	line-height: 1.618
+	font-family: 'Brandon Grotesque', sans-serif
+	color: $black
+
+h3, .site_h3
+	font-style: italic
+	font-weight: 500
+	font-size: ms(4)
+	text-transform: uppercase
+	letter-spacing: .5pt
+	font-family: 'Brandon Grotesque', sans-serif
 

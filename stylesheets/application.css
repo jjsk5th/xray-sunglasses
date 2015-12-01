@@ -1,25 +1,10 @@
-@media (min-width: 768px) {
-  /* line 15, ../sass/desktop.scss */
-  html {
-    font-size: 17px;
-  }
-}
-/* line 4, ../sass/typography.sass */
-html {
-  font-family: "Brandon Grotesque", sans-serif;
-  font-weight: 200;
-}
-
-/* line 8, ../sass/typography.sass */
-h1 {
-  font-size: 1.90983rem;
-}
-
-/* line 6, ../sass/style.sass */
+/* line 1, ../sass/reset.sass */
 body,
 a,
 ul,
-li {
+li,
+div,
+p, h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
   border: none;
@@ -27,16 +12,261 @@ li {
   list-style-type: none;
 }
 
-/* line 16, ../sass/style.sass */
-nav {
-  width: 100%;
-  height: 1.90983rem;
+@media (min-width: 768px) {
+  /* line 15, ../sass/desktop.scss */
+  html {
+    font-size: 17px;
+  }
+}
+/* line 5, ../sass/typography.sass */
+html {
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: 200;
+  line-height: 1.618em;
 }
 
-/* line 20, ../sass/style.sass */
+/* line 10, ../sass/typography.sass */
+p {
+  line-height: 1.618;
+  font-family: "abril-text", serif;
+  color: #808080;
+}
+/* line 15, ../sass/typography.sass */
+p::selection {
+  color: #fffa4d;
+  background-color: #f1433f;
+}
+
+/* line 19, ../sass/typography.sass */
+h1, .site_h1 {
+  font-size: 50px;
+  font-family: "abril-text", serif;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.618;
+  letter-spacing: -0.5pt;
+  color: #342f38;
+}
+
+/* line 28, ../sass/typography.sass */
+h2, .site_h2 {
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.618;
+  font-family: "Brandon Grotesque", sans-serif;
+  color: #342f38;
+}
+
+/* line 36, ../sass/typography.sass */
+h3, .site_h3 {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5pt;
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+/* line 5, ../sass/style.sass */
+a {
+  cursor: pointer;
+}
+
+/* line 8, ../sass/style.sass */
+nav {
+  width: 100%;
+  position: absolute;
+  color: white;
+  z-index: 2;
+}
+/* line 14, ../sass/style.sass */
+nav.fixed {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+/* line 17, ../sass/style.sass */
+nav .nav-menu {
+  display: inline-block;
+  padding: 1rem 1rem 1rem 127px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+/* line 26, ../sass/style.sass */
+nav .nav-menu a {
+  padding-bottom: 10px;
+  margin: auto 27px;
+}
+/* line 30, ../sass/style.sass */
+nav .nav-menu a:hover {
+  padding-bottom: 5px;
+  border-bottom: 3.75px solid #fffa4d;
+}
+/* line 34, ../sass/style.sass */
+nav .contact-links {
+  padding: 1rem 127px 1rem 1rem;
+  display: inline-block;
+  float: right;
+}
+/* line 39, ../sass/style.sass */
+nav .contact-links a {
+  display: inline-block;
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 54px;
+  padding: 10px;
+}
+/* line 46, ../sass/style.sass */
+nav .contact-links a.email {
+  background-color: #f1433f;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  padding-right: 54px;
+  vertical-align: top;
+}
+/* line 54, ../sass/style.sass */
+nav .contact-links a.email:hover {
+  padding-bottom: 6.25px;
+  border-bottom: #c00007 3.75px solid;
+}
+/* line 58, ../sass/style.sass */
+nav .contact-links a img {
+  width: 23px;
+  height: 23px;
+}
+
+/* line 63, ../sass/style.sass */
 header {
   background-color: #342f38;
-  height: 90vh;
+  height: 95vh;
   width: 100%;
   color: #fffa4d;
+  padding-top: 17px;
+  position: relative;
+}
+/* line 71, ../sass/style.sass */
+header .profile-pic {
+  width: 158px;
+  height: 158px;
+  background: url("/images/profile-pic.png") no-repeat center;
+  background-size: 100%;
+  border-radius: 118px;
+  border: 9px solid #70b7ba;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 140px;
+  margin-bottom: 40px;
+}
+/* line 83, ../sass/style.sass */
+header .name-container {
+  transform: skew(-8deg);
+  margin: auto;
+  margin-bottom: 30px;
+  width: 400px;
+  background-color: #fffa4d;
+  border-radius: 7px;
+}
+/* line 91, ../sass/style.sass */
+header .name-container h1 {
+  color: #342f38;
+  text-align: center;
+  font-size: 72px;
+  transform: skew(8deg);
+}
+/* line 97, ../sass/style.sass */
+header .intro-description {
+  margin: auto;
+  width: 30rem;
+  text-align: center;
+  color: #fffa4d;
+}
+/* line 103, ../sass/style.sass */
+header .large-initials {
+  font-size: 158px;
+  position: absolute;
+  margin-top: -10rem;
+  line-height: 0;
+  opacity: 0.2;
+}
+/* line 110, ../sass/style.sass */
+header .fade-box-small {
+  width: 100%;
+  height: 16px;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  bottom: 57px;
+  display: block;
+}
+/* line 118, ../sass/style.sass */
+header .fade-box-large {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  bottom: 5px;
+  display: block;
+}
+
+/* line 126, ../sass/style.sass */
+.section-header {
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+  width: 20rem;
+  padding-left: 72px;
+}
+
+/* line 132, ../sass/style.sass */
+.posts {
+  padding-left: 72px;
+  padding-right: 67px;
+  display: flex;
+  flex-flow: row wrap;
+}
+/* line 138, ../sass/style.sass */
+.posts .post-preview-container {
+  padding-right: 67px;
+  width: 210px;
+  display: inline-block;
+}
+/* line 143, ../sass/style.sass */
+.posts .post-preview-container::last-child {
+  padding-right: 0;
+}
+/* line 146, ../sass/style.sass */
+.posts .post-preview-container p.post-preview {
+  padding-top: 30px;
+}
+/* line 150, ../sass/style.sass */
+.posts .see-all-posts {
+  display: block;
+  float: none;
+}
+
+/* line 155, ../sass/style.sass */
+.title-container li {
+  width: 32%;
+  display: inline-block;
+}
+
+/* line 159, ../sass/style.sass */
+.design-skills {
+  width: 90rem;
+}
+/* line 162, ../sass/style.sass */
+.design-skills h1 {
+  border-top: solid #342f38 7px;
+}
+/* line 165, ../sass/style.sass */
+.design-skills .skill {
+  width: 32%;
+  display: inline-block;
+}
+/* line 169, ../sass/style.sass */
+.design-skills img {
+  width: 30px;
+  height: 30px;
+  background-color: #f1433f;
 }

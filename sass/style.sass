@@ -1,26 +1,173 @@
 @import '_modularscale'
 @import 'compass/utilities'
 @import '_base'
-//@import "compass/utilities/general/clearfix";
 
-body,
-a,
-ul,
-li
-	margin: 0
-	padding: 0
-	border: none
-	text-decoration: none
-	list-style-type: none
+a
+	cursor: pointer
 
 nav
 	width: 100%
-	height: ms(3)
+	position: absolute
+	color: white
+	z-index: 2
+
+	&.fixed
+		background-color: rgba(255,255,255,0.75) 
+
+	.nav-menu
+		display: inline-block
+		padding: 1rem 1rem 1rem ms(19)
+		width: 300px
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		margin-top: #{ms(0) + ms(0)}
+
+		a
+			padding-bottom: #{ms(0) + ms(0)}
+			margin: auto #{ms(13)/2}
+
+			&:hover
+				padding-bottom: #{ms(0)}
+				border-bottom: 3.75px solid $yellow
+
+	.contact-links
+		padding: 1rem ms(19) 1rem 1rem
+		display: inline-block
+		float: right
+
+		a
+			display: inline-block
+			background-color: white
+			border-radius: ms(0)
+			margin-right: ms(13)
+			padding: #{ms(0) + ms(0)}
+
+			&.email
+				background-color: $red
+				padding: #{ms(0) + ms(0)}
+				width: auto
+				height: auto
+				padding-right: ms(13)
+				vertical-align: top
+
+				&:hover
+					padding-bottom: #{ms(0) + ms(0) - 3.75px}
+					border-bottom: #c00007 3.75px solid
+
+			img
+				width: ms(7)
+				height: ms(7)
+
 
 header
 	background-color: $black
-	height: 90vh
+	height: 95vh
 	width: 100%
 	color: $yellow
+	padding-top: ms(5)
+	position: relative
 
+	.profile-pic
+		width: ms(20)
+		height: ms(20)
+		background: url('/images/profile-pic.png') no-repeat center 
+		background-size: 100%
+		border-radius: ms(18)
+		border: ms(2) solid $blue
+		margin: auto
+		margin-bottom: 1rem
+		margin-top: #{ms(20) - ms(2) - ms(2)}
+		margin-bottom: ms(11)
+
+	.name-container
+		transform: skew(-8deg)
+		margin: auto
+		margin-bottom: ms(9)
+		width: 400px
+		background-color: $yellow
+		border-radius: ms(1)
+
+		h1
+			color: $black
+			text-align: center
+			font-size: ms(15)
+			transform: skew(8deg)
+
+	.intro-description
+		margin: auto
+		width: 30rem
+		text-align: center
+		color: $yellow
+
+	.large-initials
+		font-size: ms(20)
+		position: absolute
+		margin-top: -10rem
+		line-height: 0
+		opacity: .2
+
+	.fade-box-small
+		width: 100%
+		height: ms(-1)
+		background-color: rgba(255,255,255,0.15)
+		position: absolute
+		bottom: #{ms(0) + ms(11) + ms(3)}
+		display: block
+
+	.fade-box-large
+		width: 100%
+		height: ms(11)
+		background-color: rgba(255,255,255,0.25)
+		position: absolute
+		bottom: ms(0)
+		display: block
+
+.section-header
+	padding-top: 1rem
+	margin-top: .5rem 
+	width: 20rem
+	padding-left: ms(15)
+
+.posts
+	padding-left: ms(15)
+	padding-right: ms(14)
+	display: flex
+	flex-flow: row wrap
+
+	.post-preview-container
+		padding-right: ms(14)
+		width: ms(22)
+		display: inline-block
+
+		&::last-child
+			padding-right: 0
+
+		p.post-preview
+			padding-top: ms(9)
+
+
+	.see-all-posts
+		display: block
+		float: none
+
+.title-container
+	li
+		width: 32%
+		display: inline-block
+
+.design-skills
+	width: 90rem
+
+	h1
+		border-top: solid $black ms(1)
+
+	.skill
+		width: 32%
+		display: inline-block
+
+	img
+		width: ms(9)
+		height: ms(9)
+		background-color: $red
 
