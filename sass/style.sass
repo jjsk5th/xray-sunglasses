@@ -12,11 +12,10 @@ nav
 	z-index: 2
 
 	&.fixed-header
-		background-color: rgba(255,255,255,0.95) 
+		background-color: $black 
 		position: fixed
 		box-shadow: 0 2px 3px rgba(0,0,0,.1)
-		color: $black
-		border-bottom: 3.75px solid $black
+		// border-bottom: 3.75px solid $black
 		width: 100%
 
 	.nav-menu
@@ -75,7 +74,7 @@ nav
 
 header
 	background-color: $black
-	height: 96vh
+	height: 97vh
 	width: 100%
 	color: $yellow
 	padding-top: ms(5)
@@ -138,11 +137,21 @@ header
 		bottom: ms(0)
 		display: block
 
+.section-divider
+	border-top: 3.75px $black solid
+	border-bottom: 1px solid $black
+	height: ms(0)
+	width: ms(26)
+	display: block
+	margin-top: 4rem
+	margin-bottom: 4rem
+
+
 .section-header
 	padding-top: 1rem
 	margin-top: .5rem 
 	padding-left: ms(15)
-	font-size: ms(16)
+	font-size: ms(13)
 	font-weight: 200
 	color: #ddd
 	letter-spacing: -2.25pt
@@ -201,19 +210,44 @@ header
 	.job
 		width: 100%
 
-.employment-description
-	width: 66%
+	.grubhub-logo
+		width: ms(20)
+
+	.consulting-logo
+		width: ms(17)
+		height: #{ms(17) / 1.333 }
+		background-color: $gray
+		display: inline-block
+		margin-right: ms(12)
+
+.sub-divider
+	width: ms(25)
+	border-top: 3.75px solid #f2f2f2
+	display: inline-block
+	height: 5px
+	margin-left: ms(21)
+	margin-bottom: 3rem
+	margin-top: 5rem
+
+
+.employment-description, .experience-description
+	width: 80%
 	font-weight: 200
-	margin-bottom: 4rem
+	margin-bottom: 2rem
 	line-height: 1.33em
 	font-size: ms(8)
 	color: $gray
+	font-size: ms(7)
+
+.experience-description
+	padding-left: ms(15)
 
 .title-container
 	margin-bottom: 3rem
+	display: flex
 
 	li
-		width: 32%
+		padding-right: ms(14)
 		display: inline-block
 
 		.divider
@@ -224,18 +258,54 @@ header
 			margin-bottom: .5rem
 
 .accomplishments
-	width: 66%
+	width: 80%
 	padding-bottom: .5rem
 
 .design-skills
-	width: 90rem
+	padding-left: ms(15)
+	padding-right: ms(14)
+	display: flex
+	flex-flow: row wrap
+	padding-bottom: 3rem
 
 	.skill
-		width: 32%
+		padding-right: ms(14)
+		width: 28%
 		display: inline-block
+		padding-bottom: 3rem
+
+		&:last-child
+			padding-right: 0
 
 	img
-		width: ms(9)
-		height: ms(9)
-		background-color: $red
+		width: ms(16)
+		height: ms(16)
+		border: ms(0) $blue solid
+		border-radius: ms(16)
+		margin-bottom: ms(5)
+
+.skill-container
+	display: flex
+	flex-flow: row wrap
+	padding-left: ms(20)
+	margin-top: 5rem
+	width: 80%
+
+	.skill
+		width: 25%
+		// margin-right: ms(15)
+		text-align: center
+		margin-bottom: 5rem
+
+	img
+		width: ms(10)
+		height: ms(10)
+		border-radius: ms(9)
+		border: 3.75px solid $gray
+		margin: auto
+
+.contact
+	height: 97vh
+
+
 
