@@ -4,6 +4,7 @@ a,
 ul,
 li,
 div,
+section,
 p, h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
@@ -64,7 +65,7 @@ h3, .site_h3 {
 }
 
 /* line 41, ../sass/typography.sass */
-.subhead {
+.subhead, .site_h4 {
   font-size: 30px;
   font-weight: 200;
   font-style: italic;
@@ -72,10 +73,9 @@ h3, .site_h3 {
   font-family: "Brandon Grotesque", sans-serif;
   color: #70b7ba;
   letter-spacing: -0.25pt;
-  display: inline-block;
 }
 
-/* line 51, ../sass/typography.sass */
+/* line 50, ../sass/typography.sass */
 .link {
   font-style: italic;
   font-weight: 200;
@@ -259,7 +259,7 @@ header .fade-box-large {
   letter-spacing: -2.25pt;
 }
 
-/* line 159, ../sass/style.sass */
+/* line 161, ../sass/style.sass */
 .posts {
   padding-left: 72px;
   padding-right: 67px;
@@ -267,7 +267,7 @@ header .fade-box-large {
   flex-flow: row wrap;
 }
 
-/* line 165, ../sass/style.sass */
+/* line 167, ../sass/style.sass */
 .see-all-posts {
   margin-left: 50%;
   display: inline-block;
@@ -278,82 +278,38 @@ header .fade-box-large {
   color: white;
 }
 
-/* line 174, ../sass/style.sass */
+/* line 176, ../sass/style.sass */
 .post-preview-container {
   padding-right: 67px;
   width: 28%;
   display: inline-block;
 }
-/* line 179, ../sass/style.sass */
+/* line 181, ../sass/style.sass */
 .post-preview-container:last-child {
   padding-right: 0;
 }
-/* line 182, ../sass/style.sass */
+/* line 184, ../sass/style.sass */
 .post-preview-container .site_h3 {
   color: #808080;
 }
-/* line 185, ../sass/style.sass */
+/* line 187, ../sass/style.sass */
 .post-preview-container p.post-preview {
   padding-top: 30px;
 }
-/* line 188, ../sass/style.sass */
+/* line 190, ../sass/style.sass */
 .post-preview-container .link {
   margin-top: 1rem;
   display: block;
   margin-left: 50%;
 }
-/* line 193, ../sass/style.sass */
+/* line 195, ../sass/style.sass */
 .post-preview-container .see-all-posts {
   display: block;
   float: none;
 }
 
-/* line 197, ../sass/style.sass */
-.work-history {
-  padding-left: 72px;
-  padding-right: 67px;
-  display: flex;
-  align-items: stretch;
-}
-/* line 203, ../sass/style.sass */
-.work-history .date {
-  width: 127px;
-  color: #ccc;
-}
-/* line 207, ../sass/style.sass */
-.work-history .date p {
-  color: #ccc;
-}
-/* line 210, ../sass/style.sass */
-.work-history .job {
-  width: 100%;
-}
-/* line 213, ../sass/style.sass */
-.work-history .grubhub-logo {
-  width: 158px;
-}
-/* line 216, ../sass/style.sass */
-.work-history .consulting-logo {
-  width: 96px;
-  height: 72.018px;
-  background-color: #808080;
-  display: inline-block;
-  margin-right: 50px;
-}
-
-/* line 223, ../sass/style.sass */
-.sub-divider {
-  width: 302px;
-  border-top: 3.75px solid #f2f2f2;
-  display: inline-block;
-  height: 5px;
-  margin-left: 170px;
-  margin-bottom: 3rem;
-  margin-top: 5rem;
-}
-
-/* line 233, ../sass/style.sass */
-.employment-description, .experience-description {
+/* line 200, ../sass/style.sass */
+.description {
   width: 80%;
   font-weight: 200;
   margin-bottom: 2rem;
@@ -363,22 +319,73 @@ header .fade-box-large {
   font-size: 23px;
 }
 
+/* line 210, ../sass/style.sass */
+section#resume .section-header {
+  padding-left: 199px;
+}
+/* line 213, ../sass/style.sass */
+section#resume .employment {
+  padding-left: 199px;
+}
+/* line 216, ../sass/style.sass */
+section#resume .work-history {
+  padding-left: 72px;
+  padding-right: 67px;
+  display: flex;
+  align-items: stretch;
+}
+/* line 222, ../sass/style.sass */
+section#resume .work-history .date {
+  width: 127px;
+  color: #ccc;
+}
+/* line 226, ../sass/style.sass */
+section#resume .work-history .date p {
+  color: #ccc;
+}
+/* line 229, ../sass/style.sass */
+section#resume .work-history .job {
+  width: 100%;
+}
+/* line 232, ../sass/style.sass */
+section#resume .work-history .grubhub-logo {
+  width: 158px;
+}
+/* line 235, ../sass/style.sass */
+section#resume .work-history .consulting-logo {
+  width: 96px;
+  height: 72.018px;
+  background-color: #808080;
+  display: inline-block;
+  margin-right: 50px;
+}
 /* line 242, ../sass/style.sass */
-.experience-description {
+section#resume .sub-divider {
+  width: 302px;
+  border-top: 3.75px solid #f2f2f2;
+  display: inline-block;
+  height: 5px;
+  margin-left: 170px;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
+
+/* line 253, ../sass/style.sass */
+.experience {
   padding-left: 72px;
 }
 
-/* line 245, ../sass/style.sass */
+/* line 256, ../sass/style.sass */
 .title-container {
   margin-bottom: 3rem;
   display: flex;
 }
-/* line 249, ../sass/style.sass */
+/* line 260, ../sass/style.sass */
 .title-container li {
   padding-right: 67px;
   display: inline-block;
 }
-/* line 253, ../sass/style.sass */
+/* line 264, ../sass/style.sass */
 .title-container li .divider {
   width: 54px;
   height: 2.8px;
@@ -387,13 +394,13 @@ header .fade-box-large {
   margin-bottom: 0.5rem;
 }
 
-/* line 260, ../sass/style.sass */
+/* line 271, ../sass/style.sass */
 .accomplishments {
   width: 80%;
   padding-bottom: 0.5rem;
 }
 
-/* line 264, ../sass/style.sass */
+/* line 275, ../sass/style.sass */
 .design-skills {
   padding-left: 72px;
   padding-right: 67px;
@@ -401,18 +408,18 @@ header .fade-box-large {
   flex-flow: row wrap;
   padding-bottom: 3rem;
 }
-/* line 271, ../sass/style.sass */
+/* line 282, ../sass/style.sass */
 .design-skills .skill {
   padding-right: 67px;
   width: 28%;
   display: inline-block;
   padding-bottom: 3rem;
 }
-/* line 277, ../sass/style.sass */
+/* line 288, ../sass/style.sass */
 .design-skills .skill:last-child {
   padding-right: 0;
 }
-/* line 280, ../sass/style.sass */
+/* line 291, ../sass/style.sass */
 .design-skills img {
   width: 89px;
   height: 89px;
@@ -421,7 +428,7 @@ header .fade-box-large {
   margin-bottom: 17px;
 }
 
-/* line 287, ../sass/style.sass */
+/* line 298, ../sass/style.sass */
 .skill-container {
   display: flex;
   flex-flow: row wrap;
@@ -429,22 +436,22 @@ header .fade-box-large {
   margin-top: 5rem;
   width: 80%;
 }
-/* line 294, ../sass/style.sass */
+/* line 305, ../sass/style.sass */
 .skill-container .skill {
   width: 25%;
   text-align: center;
   margin-bottom: 5rem;
 }
-/* line 300, ../sass/style.sass */
+/* line 311, ../sass/style.sass */
 .skill-container img {
-  width: 37px;
-  height: 37px;
+  width: 67px;
+  height: 67px;
   border-radius: 30px;
   border: 3.75px solid #808080;
   margin: auto;
 }
 
-/* line 307, ../sass/style.sass */
+/* line 318, ../sass/style.sass */
 .contact {
   height: 97vh;
 }

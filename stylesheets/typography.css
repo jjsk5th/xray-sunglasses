@@ -44,7 +44,7 @@ h3, .site_h3 {
 }
 
 /* line 41, ../sass/typography.sass */
-.subhead {
+.subhead, .site_h4 {
   font-size: 76.01316em;
   font-weight: 200;
   font-style: italic;
@@ -52,10 +52,9 @@ h3, .site_h3 {
   font-family: "Brandon Grotesque", sans-serif;
   color: #70b7ba;
   letter-spacing: -0.25pt;
-  display: inline-block;
 }
 
-/* line 51, ../sass/typography.sass */
+/* line 50, ../sass/typography.sass */
 .link {
   font-style: italic;
   font-weight: 200;

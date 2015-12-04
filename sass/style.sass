@@ -156,6 +156,8 @@ header
 	color: #ddd
 	letter-spacing: -2.25pt
 
+
+
 .posts
 	padding-left: ms(15)
 	padding-right: ms(14)
@@ -194,43 +196,8 @@ header
 		display: block
 		float: none
 
-.work-history
-	padding-left: ms(15)
-	padding-right: ms(14)
-	display: flex
-	align-items: stretch
 
-	.date
-		width: ms(19)
-		color: #ccc
-
-		p
-			color: #ccc
-
-	.job
-		width: 100%
-
-	.grubhub-logo
-		width: ms(20)
-
-	.consulting-logo
-		width: ms(17)
-		height: #{ms(17) / 1.333 }
-		background-color: $gray
-		display: inline-block
-		margin-right: ms(12)
-
-.sub-divider
-	width: ms(25)
-	border-top: 3.75px solid #f2f2f2
-	display: inline-block
-	height: 5px
-	margin-left: ms(21)
-	margin-bottom: 3rem
-	margin-top: 5rem
-
-
-.employment-description, .experience-description
+.description
 	width: 80%
 	font-weight: 200
 	margin-bottom: 2rem
@@ -239,7 +206,51 @@ header
 	color: $gray
 	font-size: ms(7)
 
-.experience-description
+section#resume
+	.section-header
+		padding-left: #{ms(15) + ms(19)}
+
+	.employment
+		padding-left: #{ms(15) + ms(19)}
+
+	.work-history
+		padding-left: ms(15)
+		padding-right: ms(14)
+		display: flex
+		align-items: stretch
+
+		.date
+			width: ms(19)
+			color: #ccc
+
+			p
+				color: #ccc
+
+		.job
+			width: 100%
+
+		.grubhub-logo
+			width: ms(20)
+
+		.consulting-logo
+			width: ms(17)
+			height: #{ms(17) / 1.333 }
+			background-color: $gray
+			display: inline-block
+			margin-right: ms(12)
+
+	.sub-divider
+		width: ms(25)
+		border-top: 3.75px solid #f2f2f2
+		display: inline-block
+		height: 5px
+		margin-left: ms(21)
+		margin-bottom: 3rem
+		margin-top: 5rem
+
+
+
+.experience
 	padding-left: ms(15)
 
 .title-container
@@ -298,8 +309,8 @@ header
 		margin-bottom: 5rem
 
 	img
-		width: ms(10)
-		height: ms(10)
+		width: ms(14)
+		height: ms(14)
 		border-radius: ms(9)
 		border: 3.75px solid $gray
 		margin: auto
