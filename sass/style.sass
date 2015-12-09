@@ -74,6 +74,9 @@ nav
 
 header
 	background-color: $black
+	background-image: url('/images/bkgd-image.png')
+	background-attachment: fixed
+	background-size: cover
 	height: 97vh
 	width: 100%
 	color: $yellow
@@ -124,7 +127,7 @@ header
 	.fade-box-small
 		width: 100%
 		height: ms(-1)
-		background-color: rgba(255,255,255,0.15)
+		background-color: rgba(255,255,255,0.5)
 		position: absolute
 		bottom: #{ms(0) + ms(11) + ms(3)}
 		display: block
@@ -132,7 +135,7 @@ header
 	.fade-box-large
 		width: 100%
 		height: ms(11)
-		background-color: rgba(255,255,255,0.25)
+		background-color: rgba(255,255,255,0.65)
 		position: absolute
 		bottom: ms(0)
 		display: block
@@ -150,17 +153,16 @@ header
 .section-header
 	padding-top: 1rem
 	margin-top: .5rem 
-	padding-left: ms(15)
-	font-size: ms(13)
+	font-size: ms(15)
 	font-weight: 200
-	color: #ddd
 	letter-spacing: -2.25pt
 
 
-
-.posts
+section#posts
 	padding-left: ms(15)
 	padding-right: ms(14)
+
+.posts
 	display: flex
 	flex-flow: row wrap
 
@@ -199,22 +201,70 @@ header
 
 .description
 	width: 80%
-	font-weight: 200
-	margin-bottom: 2rem
-	line-height: 1.33em
+	font-weight: 400
 	font-size: ms(8)
-	color: $gray
-	font-size: ms(7)
+	color: $black
+	font-size: ms(8)
+
+.storyline
+	padding-bottom: 8rem
+
+section#design-experience
+	padding-left: ms(14)
+
+	.storyline
+		width: 66%
+
+	.design-skills
+		padding-right: ms(14)
+		display: flex
+		flex-flow: row wrap
+		padding-bottom: 3rem
+
+		.skill
+			padding-right: ms(14)
+			width: 27%
+			display: inline-block
+			margin-bottom: 4rem
+
+			&:last-child
+				padding-right: 0
+
+		img
+			width: ms(16)
+			height: ms(16)
+			border: ms(0) $blue solid
+			border-radius: ms(16)
+			margin-bottom: ms(5)
+
+	.skill-container
+		display: flex
+		flex-flow: row wrap
+		// padding-left: ms(20)
+		margin-top: 5rem
+		width: 80%
+
+		.skill
+			width: 20%
+			// margin-right: ms(15)
+			text-align: center
+			margin-bottom: 5rem
+
+		img
+			width: ms(13)
+			height: ms(13)
+			border-radius: ms(9)
+			border: 3.75px solid $gray
+			margin: auto
+
 
 section#resume
-	.section-header
-		padding-left: #{ms(15) + ms(19)}
+	padding-left: ms(15)
 
-	.employment
-		padding-left: #{ms(15) + ms(19)}
+	.storyline
+		width: 80%
 
 	.work-history
-		padding-left: ms(15)
 		padding-right: ms(14)
 		display: flex
 		align-items: stretch
@@ -225,6 +275,7 @@ section#resume
 
 			p
 				color: #ccc
+				padding-bottom: 1.5rem
 
 		.job
 			width: 100%
@@ -244,7 +295,7 @@ section#resume
 		border-top: 3.75px solid #f2f2f2
 		display: inline-block
 		height: 5px
-		margin-left: ms(21)
+		// margin-left: ms(11)
 		margin-bottom: 3rem
 		margin-top: 5rem
 
@@ -254,8 +305,9 @@ section#resume
 	padding-left: ms(15)
 
 .title-container
-	margin-bottom: 3rem
+	margin-bottom: 5rem
 	display: flex
+	margin-top: 5rem
 
 	li
 		padding-right: ms(14)
@@ -269,51 +321,10 @@ section#resume
 			margin-bottom: .5rem
 
 .accomplishments
-	width: 80%
-	padding-bottom: .5rem
+	width: 66%
 
-.design-skills
-	padding-left: ms(15)
-	padding-right: ms(14)
-	display: flex
-	flex-flow: row wrap
-	padding-bottom: 3rem
-
-	.skill
-		padding-right: ms(14)
-		width: 28%
-		display: inline-block
-		padding-bottom: 3rem
-
-		&:last-child
-			padding-right: 0
-
-	img
-		width: ms(16)
-		height: ms(16)
-		border: ms(0) $blue solid
-		border-radius: ms(16)
-		margin-bottom: ms(5)
-
-.skill-container
-	display: flex
-	flex-flow: row wrap
-	padding-left: ms(20)
-	margin-top: 5rem
-	width: 80%
-
-	.skill
-		width: 25%
-		// margin-right: ms(15)
-		text-align: center
-		margin-bottom: 5rem
-
-	img
-		width: ms(14)
-		height: ms(14)
-		border-radius: ms(9)
-		border: 3.75px solid $gray
-		margin: auto
+	li
+		padding-bottom: 1rem
 
 .contact
 	height: 97vh

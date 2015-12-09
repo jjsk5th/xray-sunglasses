@@ -44,9 +44,9 @@ h3, .site_h3 {
 }
 
 /* line 41, ../sass/typography.sass */
-.subhead, .site_h4 {
+.subhead {
   font-size: 76.01316em;
-  font-weight: 200;
+  font-weight: 400;
   font-style: italic;
   line-height: 1.618;
   font-family: "Brandon Grotesque", sans-serif;
@@ -55,6 +55,16 @@ h3, .site_h3 {
 }
 
 /* line 50, ../sass/typography.sass */
+.storyline {
+  font-size: 76.01316em;
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  color: #342f38;
+  line-height: 1.618em;
+}
+
+/* line 58, ../sass/typography.sass */
 .link {
   font-style: italic;
   font-weight: 200;
