@@ -44,6 +44,14 @@ h3, .site_h3 {
 }
 
 /* line 41, ../sass/typography.sass */
+.caption {
+  font-style: 76.01316em;
+  font-weight: 400;
+  font-family: "Brandon Grotesque", sans-serif;
+  color: #808080;
+}
+
+/* line 47, ../sass/typography.sass */
 .subhead {
   font-size: 76.01316em;
   font-weight: 400;
@@ -54,7 +62,7 @@ h3, .site_h3 {
   letter-spacing: -0.25pt;
 }
 
-/* line 50, ../sass/typography.sass */
+/* line 56, ../sass/typography.sass */
 .storyline {
   font-size: 76.01316em;
   font-family: "Brandon Grotesque", sans-serif;
@@ -64,7 +72,7 @@ h3, .site_h3 {
   line-height: 1.618em;
 }
 
-/* line 58, ../sass/typography.sass */
+/* line 64, ../sass/typography.sass */
 .link {
   font-style: italic;
   font-weight: 200;

@@ -12,15 +12,21 @@ nav
 	z-index: 2
 
 	&.fixed-header
-		background-color: $black 
+		background-color: rgba(255, 255, 255, 0.97) 
 		position: fixed
-		box-shadow: 0 2px 3px rgba(0,0,0,.1)
-		// border-bottom: 3.75px solid $black
+		box-shadow: 0 1px 5px rgba(0,0,0,.1)
+		// border-top: 3.75px solid $black
 		width: 100%
+
+		a
+			color: $black
+
+			&.email
+				color: white
 
 	.nav-menu
 		display: inline-block
-		padding: 1rem 1rem 1rem ms(19)
+		padding: 1rem 1rem .5rem ms(19)
 		width: 300px
 		margin-left: auto
 		margin-right: auto
@@ -29,7 +35,7 @@ nav
 
 		a
 			padding-bottom: #{ms(0) + ms(0)}
-			margin: auto #{ms(13)/2}
+			margin: auto #{ms(15)/2}
 
 			&:hover
 				padding-bottom: #{ms(0)}
@@ -44,7 +50,7 @@ nav
 
 
 	.contact-links
-		padding: 1rem ms(19) 1rem 1rem
+		padding: 1rem ms(19) #{ms(0) + ms(0)} 1rem
 		display: inline-block
 		float: right
 
@@ -74,7 +80,7 @@ nav
 
 header
 	background-color: $black
-	background-image: url('/images/bkgd-image.png')
+	background-image: url('/images/books.png')
 	background-attachment: fixed
 	background-size: cover
 	height: 97vh
@@ -135,7 +141,7 @@ header
 	.fade-box-large
 		width: 100%
 		height: ms(11)
-		background-color: rgba(255,255,255,0.65)
+		background-color: rgba(255,255,255,0.75)
 		position: absolute
 		bottom: ms(0)
 		display: block
@@ -146,7 +152,7 @@ header
 	height: ms(0)
 	width: ms(26)
 	display: block
-	margin-top: 4rem
+	margin-top: 8rem
 	margin-bottom: 4rem
 
 
@@ -154,7 +160,7 @@ header
 	padding-top: 1rem
 	margin-top: .5rem 
 	font-size: ms(15)
-	font-weight: 200
+	font-weight: 700
 	letter-spacing: -2.25pt
 
 
@@ -162,15 +168,21 @@ section#posts
 	padding-left: ms(15)
 	padding-right: ms(14)
 
+	.section-header
+		padding-bottom: 4rem
+		padding-bottom: 3rem
+		margin-top: 0
+
 .posts
 	display: flex
 	flex-flow: row wrap
+
 
 .see-all-posts
 	margin-left: 50%
 	display: inline-block
 	padding: 1rem
-	margin-top: 2rem
+	margin-top: 4rem
 	font-style: italic
 	background-color: $blue
 	color: white
@@ -190,7 +202,7 @@ section#posts
 		padding-top: ms(9)
 
 	.link
-		margin-top: 1rem
+		margin-top: 2rem
 		display: block
 		margin-left: 50%
 
@@ -200,17 +212,18 @@ section#posts
 
 
 .description
-	width: 80%
+	width: 66%
 	font-weight: 400
 	font-size: ms(8)
 	color: $black
-	font-size: ms(8)
+	font-size: ms(7)
 
 .storyline
 	padding-bottom: 8rem
 
 section#design-experience
 	padding-left: ms(14)
+	padding-bottom: 4rem
 
 	.storyline
 		width: 66%
@@ -219,7 +232,6 @@ section#design-experience
 		padding-right: ms(14)
 		display: flex
 		flex-flow: row wrap
-		padding-bottom: 3rem
 
 		.skill
 			padding-right: ms(14)
@@ -237,29 +249,38 @@ section#design-experience
 			border-radius: ms(16)
 			margin-bottom: ms(5)
 
+section#software
+	padding-left: ms(14)
+	padding-right: ms(15)
+	margin-bottom: 5rem
+
 	.skill-container
 		display: flex
 		flex-flow: row wrap
-		// padding-left: ms(20)
-		margin-top: 5rem
-		width: 80%
+		// width: 66%
+
 
 		.skill
-			width: 20%
+			width: 18%
+			max-width: ms(19)
 			// margin-right: ms(15)
 			text-align: center
 			margin-bottom: 5rem
 
 		img
-			width: ms(13)
-			height: ms(13)
-			border-radius: ms(9)
-			border: 3.75px solid $gray
-			margin: auto
+			width: ms(12)
+			height: ms(12)
+			margin: auto 
+			margin-bottom: 1rem
 
 
 section#resume
 	padding-left: ms(15)
+
+	// .subhead
+	// 	font-family: $serif
+	// 	font-weight: 200
+		// color: $black
 
 	.storyline
 		width: 80%
@@ -277,18 +298,27 @@ section#resume
 				color: #ccc
 				padding-bottom: 1.5rem
 
+		&.grubhub
+			.date
+				padding-top: 6rem
+
 		.job
 			width: 100%
 
 		.grubhub-logo
 			width: ms(20)
+			margin-bottom: 1rem
 
 		.consulting-logo
-			width: ms(17)
-			height: #{ms(17) / 1.333 }
-			background-color: $gray
 			display: inline-block
 			margin-right: ms(12)
+
+			&.spothero
+				width: ms(19)
+
+			&.coupon-factory
+				height: 2rem
+
 
 	.sub-divider
 		width: ms(25)
@@ -299,19 +329,17 @@ section#resume
 		margin-bottom: 3rem
 		margin-top: 5rem
 
-
-
 .experience
 	padding-left: ms(15)
 
-.title-container
-	margin-bottom: 5rem
+.position-container
+	margin-bottom: 8rem
 	display: flex
 	margin-top: 5rem
 
-	li
+	.position-summary
+		width: 30%
 		padding-right: ms(14)
-		display: inline-block
 
 		.divider
 			width: ms(13)
@@ -327,7 +355,12 @@ section#resume
 		padding-bottom: 1rem
 
 .contact
-	height: 97vh
+	background-color: $black
+	background-image: url('/images/bkgd-image.png')
+	background-attachment: fixed
+	background-size: cover
+	height: 100vh
+	width: 100%
 
 
 
