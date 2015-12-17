@@ -33,7 +33,7 @@ h2, .site_h2 {
   letter-spacing: -0.25pt;
 }
 
-/* line 33, ../sass/typography.sass */
+/* line 34, ../sass/typography.sass */
 h3, .site_h3 {
   font-style: italic;
   font-weight: 500;
@@ -43,7 +43,7 @@ h3, .site_h3 {
   line-height: 1em;
 }
 
-/* line 41, ../sass/typography.sass */
+/* line 42, ../sass/typography.sass */
 .caption {
   font-style: 76.01316em;
   font-weight: 400;
@@ -51,10 +51,10 @@ h3, .site_h3 {
   color: #808080;
 }
 
-/* line 47, ../sass/typography.sass */
+/* line 48, ../sass/typography.sass */
 .subhead {
   font-size: 76.01316em;
-  font-weight: 400;
+  font-weight: 700;
   font-style: italic;
   line-height: 1.618;
   font-family: "Brandon Grotesque", sans-serif;
@@ -62,7 +62,7 @@ h3, .site_h3 {
   letter-spacing: -0.25pt;
 }
 
-/* line 56, ../sass/typography.sass */
+/* line 57, ../sass/typography.sass */
 .storyline {
   font-size: 76.01316em;
   font-family: "Brandon Grotesque", sans-serif;
@@ -72,7 +72,7 @@ h3, .site_h3 {
   line-height: 1.618em;
 }
 
-/* line 64, ../sass/typography.sass */
+/* line 65, ../sass/typography.sass */
 .link {
   font-style: italic;
   font-weight: 200;
