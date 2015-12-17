@@ -80,10 +80,11 @@ nav
 
 header
 	background-color: $black
-	background-image: url('/images/books.png')
+	background-image: url('/images/books3.png')
 	background-attachment: fixed
 	background-size: cover
-	height: 97vh
+	background-position: center center
+	min-height: 97vh
 	width: 100%
 	color: $yellow
 	padding-top: ms(5)
@@ -162,6 +163,10 @@ header
 	font-size: ms(15)
 	font-weight: 700
 	letter-spacing: -2.25pt
+	text-shadow: 3px 3px #dedede
+
+.subhead
+	padding-bottom: .666rem
 
 
 section#posts
@@ -213,10 +218,11 @@ section#posts
 
 .description
 	width: 66%
-	font-weight: 400
-	font-size: ms(8)
+	font-weight: 300
 	color: $black
-	font-size: ms(7)
+	font-size: ms(6)
+	font-style: normal
+	letter-spacing: normal
 
 .storyline
 	padding-bottom: 8rem
@@ -273,6 +279,31 @@ section#software
 			margin: auto 
 			margin-bottom: 1rem
 
+section#blogs
+	padding-left: ms(14)
+	padding-right: ms(15)
+	margin-bottom: 5rem
+
+	.subhead
+		padding-bottom: 2rem
+
+	.skill-container
+		display: flex
+		flex-flow: row wrap
+		// width: 66%
+
+
+		.skill
+			// width: 18%
+			// max-width: ms(19)
+			// margin-right: ms(15)
+			text-align: center
+			margin-bottom: 5rem
+			padding: 1rem 2.5%
+			img
+				max-height: ms(9)
+				margin: auto 
+				margin-bottom: 1rem
 
 section#resume
 	padding-left: ms(15)
@@ -343,10 +374,11 @@ section#resume
 
 		.divider
 			width: ms(13)
-			height: 2.8px
+			height: 5px
 			background-color: $blue
 			display: block
 			margin-bottom: .5rem
+			border-radius: 1.5px
 
 .accomplishments
 	width: 66%
@@ -356,7 +388,7 @@ section#resume
 
 .contact
 	background-color: $black
-	background-image: url('/images/bkgd-image.png')
+	background-image: url('/images/books3.png')
 	background-attachment: fixed
 	background-size: cover
 	height: 100vh

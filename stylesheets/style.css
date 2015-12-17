@@ -90,17 +90,18 @@ nav .contact-links a img {
 /* line 81, ../sass/style.sass */
 header {
   background-color: #342f38;
-  background-image: url("/images/books.png");
+  background-image: url("/images/books3.png");
   background-attachment: fixed;
   background-size: cover;
-  height: 97vh;
+  background-position: center center;
+  min-height: 97vh;
   width: 100%;
   color: #fffa4d;
   padding-top: 17px;
   position: relative;
   margin-bottom: 1rem;
 }
-/* line 93, ../sass/style.sass */
+/* line 94, ../sass/style.sass */
 header .profile-pic {
   width: 158px;
   height: 158px;
@@ -113,7 +114,7 @@ header .profile-pic {
   margin-top: 140px;
   margin-bottom: 40px;
 }
-/* line 105, ../sass/style.sass */
+/* line 106, ../sass/style.sass */
 header .name-container {
   transform: skew(-8deg);
   margin: auto;
@@ -122,14 +123,14 @@ header .name-container {
   background-color: #fffa4d;
   border-radius: 7px;
 }
-/* line 113, ../sass/style.sass */
+/* line 114, ../sass/style.sass */
 header .name-container h1 {
   color: #342f38;
   text-align: center;
   font-size: 72px;
   transform: skew(8deg);
 }
-/* line 119, ../sass/style.sass */
+/* line 120, ../sass/style.sass */
 header .intro-description {
   margin: auto;
   width: 30rem;
@@ -137,7 +138,7 @@ header .intro-description {
   color: #fffa4d;
   font-weight: 500;
 }
-/* line 126, ../sass/style.sass */
+/* line 127, ../sass/style.sass */
 header .large-initials {
   font-size: 158px;
   position: absolute;
@@ -145,7 +146,7 @@ header .large-initials {
   line-height: 0;
   opacity: 0.2;
 }
-/* line 133, ../sass/style.sass */
+/* line 134, ../sass/style.sass */
 header .fade-box-small {
   width: 100%;
   height: 16px;
@@ -154,7 +155,7 @@ header .fade-box-small {
   bottom: 57px;
   display: block;
 }
-/* line 141, ../sass/style.sass */
+/* line 142, ../sass/style.sass */
 header .fade-box-large {
   width: 100%;
   height: 40px;
@@ -164,7 +165,7 @@ header .fade-box-large {
   display: block;
 }
 
-/* line 149, ../sass/style.sass */
+/* line 150, ../sass/style.sass */
 .section-divider {
   border-top: 3.75px #342f38 solid;
   border-bottom: 1px solid #342f38;
@@ -175,34 +176,40 @@ header .fade-box-large {
   margin-bottom: 4rem;
 }
 
-/* line 159, ../sass/style.sass */
+/* line 160, ../sass/style.sass */
 .section-header {
   padding-top: 1rem;
   margin-top: 0.5rem;
   font-size: 72px;
   font-weight: 700;
   letter-spacing: -2.25pt;
+  text-shadow: 3px 3px #dedede;
 }
 
-/* line 167, ../sass/style.sass */
+/* line 168, ../sass/style.sass */
+.subhead {
+  padding-bottom: 0.666rem;
+}
+
+/* line 172, ../sass/style.sass */
 section#posts {
   padding-left: 72px;
   padding-right: 67px;
 }
-/* line 171, ../sass/style.sass */
+/* line 176, ../sass/style.sass */
 section#posts .section-header {
   padding-bottom: 4rem;
   padding-bottom: 3rem;
   margin-top: 0;
 }
 
-/* line 176, ../sass/style.sass */
+/* line 181, ../sass/style.sass */
 .posts {
   display: flex;
   flex-flow: row wrap;
 }
 
-/* line 181, ../sass/style.sass */
+/* line 186, ../sass/style.sass */
 .see-all-posts {
   margin-left: 50%;
   display: inline-block;
@@ -213,77 +220,78 @@ section#posts .section-header {
   color: white;
 }
 
-/* line 190, ../sass/style.sass */
+/* line 195, ../sass/style.sass */
 .post-preview-container {
   padding-right: 67px;
   width: 28%;
   display: inline-block;
 }
-/* line 195, ../sass/style.sass */
+/* line 200, ../sass/style.sass */
 .post-preview-container:last-child {
   padding-right: 0;
 }
-/* line 198, ../sass/style.sass */
+/* line 203, ../sass/style.sass */
 .post-preview-container .site_h3 {
   color: #808080;
 }
-/* line 201, ../sass/style.sass */
+/* line 206, ../sass/style.sass */
 .post-preview-container p.post-preview {
   padding-top: 30px;
 }
-/* line 204, ../sass/style.sass */
+/* line 209, ../sass/style.sass */
 .post-preview-container .link {
   margin-top: 2rem;
   display: block;
   margin-left: 50%;
 }
-/* line 209, ../sass/style.sass */
+/* line 214, ../sass/style.sass */
 .post-preview-container .see-all-posts {
   display: block;
   float: none;
 }
 
-/* line 214, ../sass/style.sass */
+/* line 219, ../sass/style.sass */
 .description {
   width: 66%;
-  font-weight: 400;
-  font-size: 28px;
+  font-weight: 300;
   color: #342f38;
-  font-size: 23px;
+  font-size: 21px;
+  font-style: normal;
+  letter-spacing: normal;
 }
 
-/* line 221, ../sass/style.sass */
+/* line 227, ../sass/style.sass */
 .storyline {
   padding-bottom: 8rem;
 }
 
-/* line 224, ../sass/style.sass */
+/* line 230, ../sass/style.sass */
 section#design-experience {
   padding-left: 67px;
   padding-bottom: 4rem;
 }
-/* line 228, ../sass/style.sass */
+/* line 234, ../sass/style.sass */
 section#design-experience .storyline {
   width: 66%;
 }
-/* line 231, ../sass/style.sass */
+/* line 237, ../sass/style.sass */
 section#design-experience .design-skills {
   padding-right: 67px;
   display: flex;
   flex-flow: row wrap;
 }
-/* line 236, ../sass/style.sass */
+/* line 242, ../sass/style.sass */
 section#design-experience .design-skills .skill {
   padding-right: 67px;
   width: 27%;
   display: inline-block;
   margin-bottom: 4rem;
 }
-/* line 242, ../sass/style.sass */
+/* line 248, ../sass/style.sass */
 section#design-experience .design-skills .skill:last-child {
   padding-right: 0;
 }
-/* line 245, ../sass/style.sass */
+/* line 251, ../sass/style.sass */
 section#design-experience .design-skills img {
   width: 89px;
   height: 89px;
@@ -292,25 +300,25 @@ section#design-experience .design-skills img {
   margin-bottom: 17px;
 }
 
-/* line 252, ../sass/style.sass */
+/* line 258, ../sass/style.sass */
 section#software {
   padding-left: 67px;
   padding-right: 72px;
   margin-bottom: 5rem;
 }
-/* line 257, ../sass/style.sass */
+/* line 263, ../sass/style.sass */
 section#software .skill-container {
   display: flex;
   flex-flow: row wrap;
 }
-/* line 263, ../sass/style.sass */
+/* line 269, ../sass/style.sass */
 section#software .skill-container .skill {
   width: 18%;
   max-width: 127px;
   text-align: center;
   margin-bottom: 5rem;
 }
-/* line 270, ../sass/style.sass */
+/* line 276, ../sass/style.sass */
 section#software .skill-container img {
   width: 50px;
   height: 50px;
@@ -318,57 +326,85 @@ section#software .skill-container img {
   margin-bottom: 1rem;
 }
 
-/* line 277, ../sass/style.sass */
+/* line 282, ../sass/style.sass */
+section#blogs {
+  padding-left: 67px;
+  padding-right: 72px;
+  margin-bottom: 5rem;
+}
+/* line 287, ../sass/style.sass */
+section#blogs .subhead {
+  padding-bottom: 2rem;
+}
+/* line 290, ../sass/style.sass */
+section#blogs .skill-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+/* line 296, ../sass/style.sass */
+section#blogs .skill-container .skill {
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 1rem 2.5%;
+}
+/* line 303, ../sass/style.sass */
+section#blogs .skill-container .skill img {
+  max-height: 30px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+/* line 308, ../sass/style.sass */
 section#resume {
   padding-left: 72px;
 }
-/* line 285, ../sass/style.sass */
+/* line 316, ../sass/style.sass */
 section#resume .storyline {
   width: 80%;
 }
-/* line 288, ../sass/style.sass */
+/* line 319, ../sass/style.sass */
 section#resume .work-history {
   padding-right: 67px;
   display: flex;
   align-items: stretch;
 }
-/* line 293, ../sass/style.sass */
+/* line 324, ../sass/style.sass */
 section#resume .work-history .date {
   width: 127px;
   color: #ccc;
 }
-/* line 297, ../sass/style.sass */
+/* line 328, ../sass/style.sass */
 section#resume .work-history .date p {
   color: #ccc;
   padding-bottom: 1.5rem;
 }
-/* line 302, ../sass/style.sass */
+/* line 333, ../sass/style.sass */
 section#resume .work-history.grubhub .date {
   padding-top: 6rem;
 }
-/* line 305, ../sass/style.sass */
+/* line 336, ../sass/style.sass */
 section#resume .work-history .job {
   width: 100%;
 }
-/* line 308, ../sass/style.sass */
+/* line 339, ../sass/style.sass */
 section#resume .work-history .grubhub-logo {
   width: 158px;
   margin-bottom: 1rem;
 }
-/* line 312, ../sass/style.sass */
+/* line 343, ../sass/style.sass */
 section#resume .work-history .consulting-logo {
   display: inline-block;
   margin-right: 50px;
 }
-/* line 316, ../sass/style.sass */
+/* line 347, ../sass/style.sass */
 section#resume .work-history .consulting-logo.spothero {
   width: 127px;
 }
-/* line 319, ../sass/style.sass */
+/* line 350, ../sass/style.sass */
 section#resume .work-history .consulting-logo.coupon-factory {
   height: 2rem;
 }
-/* line 323, ../sass/style.sass */
+/* line 354, ../sass/style.sass */
 section#resume .sub-divider {
   width: 302px;
   border-top: 3.75px solid #f2f2f2;
@@ -378,44 +414,45 @@ section#resume .sub-divider {
   margin-top: 5rem;
 }
 
-/* line 332, ../sass/style.sass */
+/* line 363, ../sass/style.sass */
 .experience {
   padding-left: 72px;
 }
 
-/* line 335, ../sass/style.sass */
+/* line 366, ../sass/style.sass */
 .position-container {
   margin-bottom: 8rem;
   display: flex;
   margin-top: 5rem;
 }
-/* line 340, ../sass/style.sass */
+/* line 371, ../sass/style.sass */
 .position-container .position-summary {
   width: 30%;
   padding-right: 67px;
 }
-/* line 344, ../sass/style.sass */
+/* line 375, ../sass/style.sass */
 .position-container .position-summary .divider {
   width: 54px;
-  height: 2.8px;
+  height: 5px;
   background-color: #70b7ba;
   display: block;
   margin-bottom: 0.5rem;
+  border-radius: 1.5px;
 }
 
-/* line 351, ../sass/style.sass */
+/* line 383, ../sass/style.sass */
 .accomplishments {
   width: 66%;
 }
-/* line 354, ../sass/style.sass */
+/* line 386, ../sass/style.sass */
 .accomplishments li {
   padding-bottom: 1rem;
 }
 
-/* line 357, ../sass/style.sass */
+/* line 389, ../sass/style.sass */
 .contact {
   background-color: #342f38;
-  background-image: url("/images/bkgd-image.png");
+  background-image: url("/images/books3.png");
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
