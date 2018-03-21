@@ -1,20 +1,14 @@
 module.exports = function(grunt) {
 
-  // Load the plugin that provides the "uglify" task.
-  // grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-connect');
+  // Load the plugins
   grunt.loadNpmTasks('grunt-web-server');
 
-  // // Default task(s).
-  // grunt.registerTask('default', ['uglify']);
+  // Configure the plugins
   grunt.initConfig({
-    connect: {
-      uses_defaults: {}
-    },
     web_server: {
       options: {
         cors: true,
-        port: 8000,
+        port: 3000,
         nevercache: true,
         logRequests: true
       },

@@ -1,8 +1,8 @@
 html {
-  font-size: 19px;
-  font-family: "ff-tisa-web-pro",serif;
-  font-weight: 100;
-  color: rgba(74,74,74,.68);
+  font-size: 20px;
+  font-family: "source-serif-pro",serif;
+  font-weight: 300;
+  color: rgba(42,26,47,.98);
 }
 
 .flex-wrapper {
@@ -11,53 +11,67 @@ html {
 }
 
 div.splash {
-  background-color: #f2f2f2;
+  background-color:white;
   height: 100vh;
   background-image: url('imgs/splash-bkgd.png');
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: cover;
-  width: 38%;
+  width: 36%;
   position: fixed;
-  border-right: .5rem solid rgba(74,74,74,.04);
 }
 
 div.right {
-  padding-left: calc(38% + 6rem);
-  padding-bottom: 38vh;
-  padding-right: 6rem;
-  padding-top: 54vh;  
+  padding-left: calc(36% + 6rem);
+  padding-bottom: 40vh;
+  padding-right: 8rem;
+  padding-top: 46vh;  
+}
+
+div.right p {
+  padding-left: 1.25rem;
+  padding-bottom: .75rem;
+  color: rgba(74,74,74,.8);
+  max-width: 35rem;
 }
 
 h1 {
   font-size: 12.125rem;
   font-family: "brandon-grotesque";
   font-weight: 100;
-  line-height: 6.5rem;
-  letter-spacing: -.333rem;
-  background: -webkit-linear-gradient(orange, orange, red, maroon);
+  line-height: 11.5rem;
+  letter-spacing: -.75rem;
+  background: -webkit-linear-gradient(rgba(250,217,97,.46),rgba(247,107,28,.56));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   display: block;
   width: 400px;
 }
 
-h2 {
-  font-size: 1rem;
-  padding-bottom: 3rem;
+h1 span {
   display: block;
 }
 
-.flex-wrapper.homepage-buttons {
-  margin-top: 7rem;
-  justify-content: flex-start;
+h1 span.last-name {
+  margin-top: -4.5rem;
 }
 
-.flex-wrapper.homepage-buttons button {
-  margin-right: 3rem;
+h2 {
+  font-size: 1rem;
+  padding-bottom: 2rem;
+  display: block;
+  padding-left: 1.25rem;
+  margin-top: -1rem;
+  color: rgba(39, 29, 29, .78);
+  font-weight: 900;
 }
 
+.contact {
+  margin-top: 11rem;
+  padding-left: 1.25rem;
+  font-weight: 700;
+}
 
-.flex-wrapper.homepage-buttons a {
-  margin-right: 0rem;
+.contact a {
+  color: #B1795D;
 }
