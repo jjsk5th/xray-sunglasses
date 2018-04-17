@@ -1,0 +1,118 @@
+.case-studies div.splash {
+  background-color:white;
+  height: 100vh;
+  background-image: url('../imgs/splash-bkgd.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  width: 36%;
+  position: fixed;
+}
+
+.case-studies div.right {
+  padding-left: calc(36% + 6rem);
+  padding-bottom: 40vh;
+  /* padding-right: 8rem; */
+  padding-top: 46vh;  
+}
+
+.case-studies div.right p {
+  padding-left: 1.25rem;
+  padding-bottom: .75rem;
+  color: rgba(74,74,74,.8);
+  max-width: 35rem;
+}
+
+.case-studies h1 {
+  display: block;
+  width: 400px;
+}
+
+.case-studies h1 span {
+  display: block;
+}
+
+.case-studies h1 span.last-name {
+  margin-top: -4.5rem;
+}
+
+.case-studies h2 {
+  padding-bottom: 1rem;
+  display: block;
+  padding-left: 1rem;
+  margin-top: -1rem;
+}
+
+.case-studies h1 {
+  width: 100%;
+}
+
+.case-studies a.case-study-preview {
+  width: 75%;
+  height: 38vh;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  border: .5rem solid white;
+  box-sizing: border-box;
+  box-shadow: 0 0 1rem #e0e0e0;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: .25rem;
+}
+
+.case-studies a.case-study-preview:hover {
+  box-shadow: 0 0 1rem #9b9a9a;
+}
+
+.case-studies a.case-study-preview h2 {
+  color: rgba(255,255,255,.35);
+  padding-top: 9rem;
+  text-decoration: none !important;
+  display: block;
+  width: 30%;
+}
+
+.case-studies .attendant-preview {
+  background-color: #555C6E;
+  color: white;
+  background-image: url(../imgs/attendant.png);
+  background-size: 25rem;
+  background-repeat: no-repeat;
+  background-position: calc(100% + 3rem) 1rem;
+}
+
+.case-studies .supply-preview {
+  background-color: #02B4C5;
+  color: white;
+  background-image: url(../imgs/supply-levels-mobile.png);
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 2rem) -3rem;
+}
+
+.case-studies .dashboard-preview {
+  background-color: #00a98c;
+  color: white;
+  background-image: url(../imgs/catalog-header.png);
+  background-size: 25rem;
+  background-repeat: no-repeat;
+  background-position: calc(100% + 3rem) 1rem;
+}
+
+.case-studies .ab-preview {
+  background-color: #c00007;
+  color: white;
+  background-image: url(../imgs/ab-header.png);
+  background-size: 25rem;
+  background-repeat: no-repeat;
+  background-position: calc(100% + 3rem) 1rem;
+}
+
+.case-studies .research-preview {
+  background-color: #F18770;
+  color: white;
+  background-image: url(../imgs/research-header.png);
+  background-size: 25rem;
+  background-repeat: no-repeat;
+  background-position: calc(100% + 3rem) 1rem;
+}

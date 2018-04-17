@@ -1,0 +1,78 @@
+html {
+  font-size: 20px;
+  font-family: "source-serif-pro",serif;
+  font-weight: 300;
+  color: rgba(42,26,47,.98);
+  line-height: 1.618rem;
+}
+
+p, ul {
+  color: rgba(74,74,74,.5);
+}
+
+ul {
+  margin-left: -2rem;
+}
+
+li {
+  list-style-type: none;
+  text-indent: -.75rem;
+}
+
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+}
+
+h1 {
+  font-size: 12.125rem;
+  font-family: "brandon-grotesque";
+  font-weight: 100;
+  line-height: 11.5rem;
+  letter-spacing: -.75rem;
+  background: -webkit-linear-gradient(rgba(250,217,97,.46),rgba(247,107,28,.56));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+h2 {
+  font-size: 2.25rem;
+  color: rgba(74,74,74,.84);
+  font-weight: 900;
+  line-height: 2.5rem;
+}
+
+.caption {
+  color: #ababab;
+  font-family: "brandon-grotesque";
+  font-weight: 400;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+nav {
+  position: absolute;
+  z-index: 2;
+  margin-left: 5rem;
+  margin-top: 1rem;
+  display: none;
+}
+
+nav a {
+  color: white;
+  text-shadow: 0 0 1rem #000;
+  /* border-bottom: 2px solid white; */
+  margin-right: 2rem;
+}
+
+header h1 {
+  color: white;
+  text-shadow: 0 0 2rem rgba(0,0,0,.75);
+  background:none;
+  -webkit-text-fill-color: white;
+  line-height: 9rem;
+}

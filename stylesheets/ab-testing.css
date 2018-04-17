@@ -1,0 +1,18 @@
+.ab-testing header {
+  background-color: #c00007;
+}
+
+.ab-testing header img.off-edge {
+  top: 4rem;
+  right: 0rem;
+}
+
+.ab-testing .flex-wrapper.widget .one-third {
+  width: 27%;
+  margin-bottom: 1rem;
+}
+
+.ab-testing .flex-wrapper.widget .one-third img {
+  border-width: .5rem;
+}
+

@@ -1,0 +1,21 @@
+.attendant header {
+  background-color: #555C6E;
+}
+
+.attendant header img.off-edge {
+  height: 550px;
+  right: -8rem;
+  top: 3rem;
+}
+
+.attendant header h1 {
+  z-index: 2;
+  position: relative;
+}
+
+.attendant .shift-details .done-better {
+  margin-top: -25rem;
+  position: absolute;
+  margin-left: 13rem;
+  width: 50%;;
+}

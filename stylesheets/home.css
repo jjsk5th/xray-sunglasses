@@ -1,0 +1,54 @@
+.home div.splash {
+  background-color:white;
+  height: 100vh;
+  background-image: url('../imgs/splash-bkgd.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  width: 36%;
+  position: fixed;
+}
+
+.home div.right {
+  padding-left: calc(36% + 6rem);
+  padding-bottom: 40vh;
+  padding-right: 8rem;
+  padding-top: 46vh;  
+}
+
+.home div.right p {
+  padding-left: 1.25rem;
+  padding-bottom: .75rem;
+  color: rgba(74,74,74,.8);
+  max-width: 35rem;
+}
+
+.home h1 {
+  display: block;
+  width: 400px;
+}
+
+.home h1 span {
+  display: block;
+}
+
+.home h1 span.last-name {
+  margin-top: -4.5rem;
+}
+
+.home h2 {
+  padding-bottom: 2rem;
+  display: block;
+  padding-left: 1.25rem;
+  margin-top: -1rem;
+}
+
+.home .contact {
+  margin-top: 11rem;
+  padding-left: 1.25rem;
+  font-weight: 700;
+}
+
+.home .contact a {
+  color: #B1795D;
+}

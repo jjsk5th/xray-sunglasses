@@ -1,0 +1,10 @@
+.dashboard header {
+  background-color: #00a98c;
+}
+
+.dashboard header img.off-edge {
+  top: 7rem;
+  right: -7rem;
+  /* width: 55rem; */
+}
+
